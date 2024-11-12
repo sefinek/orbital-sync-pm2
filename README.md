@@ -19,7 +19,7 @@ pm2 start
 pm2 startup
 sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u $USER --hp $HOME
 pm2 save
-systemctl status pm2-sefinek
+pm2 logs
 ```
 
 And that's all, good luck!

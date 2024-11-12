@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const { spawn } = require('node:child_process');
 const path = require('node:path');
 const orbitalPath = path.join(__dirname, 'node_modules', 'orbital-sync', 'dist', 'index.js');

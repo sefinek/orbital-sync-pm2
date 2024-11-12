@@ -1,7 +1,7 @@
 module.exports = {
 	apps: [{
 		name: 'orbital',
-		script: 'orbital-sync',
+		script: './index.js',
 
 		// Logging configuration
 		log_date_format: 'HH:mm:ss.SSS DD.MM.YYYY',

@@ -11,7 +11,8 @@ cp .env.default .env
 mcedit .env
 npm install
 npm install pm2 -g
-sudo chown -R $USER:$USER /var/log/orbital-sync
+sudo mkdir /var/log/orbital-sync
+sudo chown $USER:$USER /var/log/orbital-sync
 node .     // first test, ^C to exit
 pm2 start
 pm2 startup

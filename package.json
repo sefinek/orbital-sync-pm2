@@ -1,7 +1,7 @@
 {
   "name": "orbital-sync-pm2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Runs the orbital-sync process continuously (24/7) using PM2. You don't need to install this module globally (-g).",
   "homepage": "https://github.com/sefinek/orbital-sync-pm2#readme",
   "bugs": {
     "url": "https://github.com/sefinek/orbital-sync-pm2/issues"
@@ -12,9 +12,14 @@
   },
   "license": "MIT",
   "author": "Sefinek <contact@sefinek.net> (https://sefinek.net)",
-  "main": "ecosystem.config.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "up": "ncu -u && npm i && npm update && npm audit fix"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "orbital-sync": "^1.8.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",

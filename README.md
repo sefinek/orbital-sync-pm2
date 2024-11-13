@@ -1,7 +1,7 @@
 # Orbital Sync PM2
 Runs the [orbital-sync](https://github.com/mattwebbio/orbital-sync) process continuously (24/7) using [PM2](https://www.npmjs.com/package/pm2). You don't need to install `orbital-sync` globally (-g).
 
-Set the necessary [environment](https://orbitalsync.com/CONFIG.html) variables in the `.env` file.
+Set the necessary [environment variables](https://orbitalsync.com/CONFIG.html) in the `.env` file.
 
 ## Installation
 ### Update Git

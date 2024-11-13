@@ -22,7 +22,7 @@ npm install
 npm install pm2 -g
 sudo mkdir /var/log/orbital-sync
 sudo chown $USER:$USER /var/log/orbital-sync
-node .     // first test, ^C to exit
+node .      // first test, ^C to exit
 pm2 start
 pm2 startup
 sudo env PATH=$PATH:/usr/bin /usr/lib/node_modules/pm2/bin/pm2 startup systemd -u $USER --hp $HOME

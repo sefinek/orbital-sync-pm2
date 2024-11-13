@@ -4,7 +4,7 @@ Runs the [orbital-sync](https://github.com/mattwebbio/orbital-sync) process cont
 Set the necessary [environment variables](https://orbitalsync.com/CONFIG.html) in the `.env` file.
 
 ## Installation
-### Update Git
+### Download or upgrade Git
 ```bash
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt update && sudo apt -y install git
